@@ -23,10 +23,6 @@ The Guest Entry Application is built with a focus on responsive design, ensuring
 - **MaterializeCSS**: A CSS framework based on Material Design for a responsive and modern look.
 - **JavaScript**: For adding interactivity and handling user input.
 
-## Usage
-
-To use this application, open the `index.html` file in a web browser. The application interface will guide you through adding and managing guest entries. The responsive design ensures that you can use the application on any device.
-
 ---
 
 This project was created as part of an internship to develop skills in front-end development and responsive design using HTML, CSS, MaterializeCSS, and JavaScript. It provides a basic template that can be expanded into a fully functional guest entry application.
