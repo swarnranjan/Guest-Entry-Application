@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" type="Images/jpeg" href="./Images/Orange-logo-mark.png" width="20px">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6em;
+        }
+
+        nav {
+            background-color: #273249;
+            padding-top: 0px;
+        }
+
+        .sidenav {
+            background-color: #58A6BB;
+        }
+
+        .sidenav li>a {
+            color: #FEEBD3;
+        }
+
+        .Brand-Logo {
+            margin-top: 15px;
+        }
+
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-container {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        .form-container h4 {
+            margin-bottom: 20px;
+        }
+
+        .input-field input {
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .btn {
+            background-color: #273249;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .page-footer {
+            background-color: #273249;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .footer-icons a {
+            margin: 0 10px;
+            color: #fff;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-wrapper">
+            <a href="index.html" class="Brand-Logo"><img src="./Images/Cream-wordmark-orange.png" width="190px"></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Signup</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="signup.html">Signup</a></li>
+    </ul>
+
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+    </script>
+
+    <div class="container">
+        <div class="form-container">
+            <h4 class="center-align">Login</h4>
+            <form id="login-form">
+                <div class="input-field">
+                    <input id="login-email" type="email" class="validate" required>
+                    <label for="login-email">Email</label>
+                </div>
+                <div class="input-field">
+                    <input id="login-password" type="password" class="validate" required>
+                    <label for="login-password">Password</label>
+                </div>
+                <button class="btn" type="submit">Login <i class="material-icons right">send</i></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col s1"><img src="Images/Orange-logo-mark.png" height="60px"></div>
+                <div class="col s12">
+                    <h5>About Us</h5>
+                    <p>Our Company is dedicated to providing innovative workplace solutions.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-icons center">
+            <a href="https://facebook.com" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="https://linkedin.com" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.map"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
