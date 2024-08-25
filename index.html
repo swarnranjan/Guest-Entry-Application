@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HiVisitant</title>
-    <link rel="icon" type="Images/jpeg" href="./Images/Orange-logo-mark.png" width="20px">
+    <link rel="icon" type="image/jpeg" href="./Images/Orange-logo-mark.png" width="20px">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -150,12 +150,6 @@
         <li><a href="signup.html">Signup</a></li>
     </ul>
 
-    <script>
-        $(document).ready(function () {
-            $('.sidenav').sidenav();
-        });
-    </script>
-
     <!-- Slider Section -->
     <div class="slider">
         <ul class="slides">
@@ -250,11 +244,15 @@
     </footer>
 
     <!-- JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.map"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+
         document.addEventListener('DOMContentLoaded', function () {
             var elems = document.querySelectorAll('.slider');
             var instances = M.Slider.init(elems, {
